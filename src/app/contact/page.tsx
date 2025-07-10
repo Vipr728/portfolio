@@ -19,12 +19,11 @@ export default function ContactPage() {
 				color={particleColor}
 			/>
 			<header className="w-full p-4 flex justify-center items-center relative z-10">
-				<nav className="flex gap-4 underline">
-					<Link href="/">Home</Link>
-					<Link href="/projects">Projects</Link>
-					<Link href="/contact">Contact</Link>
-					<a href="https://www.linkedin.com/in/abhinav-bandaru-a768022a5/" target="_blank">LinkedIn</a>
-					<a href="https://github.com/vipr728" target="_blank">GitHub</a>
+				<nav className="flex gap-4 items-center">
+					<Link href="/" className="link-style-1">Home</Link>
+					<Link href="/projects" className="link-style-1">Projects</Link>
+					<a href="https://www.linkedin.com/in/abhinav-bandaru-a768022a5/" target="_blank" className="link-style-1">LinkedIn</a>
+					<a href="https://github.com/vipr728" target="_blank" className="link-style-1">GitHub</a>
 				</nav>
 				<div className="absolute right-4">
 					<ModeToggle />

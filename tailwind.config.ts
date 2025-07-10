@@ -11,6 +11,16 @@ const config: Config = {
       fontFamily: {
         mono: ['var(--font-jetbrains-mono)', 'monospace'],
       },
+      animation: {
+        'border-beam': 'border-beam calc(var(--duration) * 1s) infinite linear',
+      },
+      keyframes: {
+        'border-beam': {
+          '100%': {
+            'offset-distance': '100%',
+          },
+        },
+      },
     },
   },
   plugins: [require('tailwindcss-animate')],
