@@ -1,11 +1,11 @@
 "use client";
 
-import { ModeToggle } from "@/components/mode-toggle";
 import { Particles } from "@/components/magicui/particles";
-import { useTheme } from "next-themes";
+import { ModeToggle } from "@/components/mode-toggle";
 import Link from "next/link";
+import { useTheme } from "next-themes";
 
-export default function Home() {
+export default function ContactPage() {
 	const { resolvedTheme } = useTheme();
 	const particleColor = resolvedTheme === "dark" ? "#ffffff" : "#000000";
 	return (
@@ -20,6 +20,7 @@ export default function Home() {
 			/>
 			<header className="w-full p-4 flex justify-center items-center relative z-10">
 				<nav className="flex gap-4 underline">
+					<Link href="/">Home</Link>
 					<Link href="/projects">Projects</Link>
 					<Link href="/contact">Contact</Link>
 					<a href="https://www.linkedin.com/in/abhinav-bandaru-a768022a5/" target="_blank">LinkedIn</a>
@@ -30,9 +31,9 @@ export default function Home() {
 				</div>
 			</header>
 			<div className="flex flex-col justify-center items-center flex-grow relative z-10">
-				<div className="flex flex-col justify-center items-start p-4">
-					<h1 className="text-2xl italic mb-2">Hi, im</h1>
-					<h1 className="font-extrabold text-9xl italic">abhi</h1>
+				<h1 className="font-extrabold text-7xl italic">Contact Me</h1>
+				<div className="p-4 mt-8 text-center">
+					<p>You can reach me at my email.</p>
 				</div>
 			</div>
 			<footer className="absolute bottom-0 left-0 w-full p-4 text-center relative z-10">
